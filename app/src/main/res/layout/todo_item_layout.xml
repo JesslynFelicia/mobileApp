@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="todo"
+            type="com.example.kepo.model.Todo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textinputborder"
+        android:clickable="true"
+        android:onClick="detailtodo"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:onClick="detailtodo"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="detailtodo"
+                android:text="@{todo.title}"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:text="tes" />
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:gravity="right" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="detailtodo"
+                android:text="@{todo.last_edited}"
+                android:textSize="30dp"
+                tools:text="tes" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

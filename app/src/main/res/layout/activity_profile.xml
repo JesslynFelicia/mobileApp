@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.kepo.model.User" />
+    </data>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="720dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView3"
+            android:layout_width="198dp"
+            android:layout_height="179dp"
+
+
+            android:layout_marginTop="141dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginRight="102dp"
+            app:srcCompat="@drawable/ic_person"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="359dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="NAMA" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="319dp"
+            android:text=""
+            android:textColor="@color/black"
+            tools:text = "username"/>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentBottom="true"
+
+
+            android:layout_marginBottom="283dp"
+            android:text="Logout"
+            android:onClick="logout"
+            android:textColor="#E63C3C" />
+
+        <ImageView
+            android:gravity="center_horizontal"
+            android:id="@+id/btn_back"
+            android:layout_width="69dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="10dp"
+            android:onClick="back"
+            app:srcCompat="@drawable/ic_arrow_back"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+
+</layout>

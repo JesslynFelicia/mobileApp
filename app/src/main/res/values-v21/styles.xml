@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button.Blue" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/purple_700</item>
+    </style>
+</resources>

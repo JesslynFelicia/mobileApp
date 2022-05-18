@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="todo"
+    type="com.example.kepo.model.Todo" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="69dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:onClick="backstodo"
+                app:srcCompat="@drawable/ic_arrow_back"
+                tools:ignore="VectorDrawableCompat" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="260dp"
+                android:layout_height="69dp"
+                android:hint="search todo"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+                app:srcCompat="@drawable/ic_search"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.246"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="96dp"
+            android:layout_height="34dp"
+            android:text="by todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.596"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.097" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
